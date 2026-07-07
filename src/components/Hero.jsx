@@ -144,7 +144,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
             <a
-              href="/resume.pdf"
+              href="/portfolio/Raman_Thakur_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn-outline flex items-center gap-2"
@@ -152,7 +152,7 @@ export default function Hero() {
               <FiEye /> View Resume
             </a>
             <a
-              href="/resume.pdf"
+              href="/portfolio/Raman_Thakur_Resume.pdf"
               download="Raman_Thakur_Resume.pdf"
               className="btn-primary flex items-center gap-2"
             >
