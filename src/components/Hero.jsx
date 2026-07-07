@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
+import {
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiDownload,
+  FiEye,
+} from "react-icons/fi";
 
 const TYPING_WORDS = [
   "React Native Developer",
@@ -19,7 +25,10 @@ function TypingText() {
     const word = TYPING_WORDS[index];
     let timeout;
     if (!deleting && displayed.length < word.length) {
-      timeout = setTimeout(() => setDisplayed(word.slice(0, displayed.length + 1)), 80);
+      timeout = setTimeout(
+        () => setDisplayed(word.slice(0, displayed.length + 1)),
+        80,
+      );
     } else if (!deleting && displayed.length === word.length) {
       timeout = setTimeout(() => setDeleting(true), 1800);
     } else if (deleting && displayed.length > 0) {
@@ -64,7 +73,12 @@ function Particles() {
             background: "linear-gradient(135deg,#6C63FF,#00C2FF)",
           }}
           animate={{ y: [-20, 20, -20], opacity: [0.1, 0.4, 0.1] }}
-          transition={{ duration: p.duration, delay: p.delay, repeat: Infinity, ease: "easeInOut" }}
+          transition={{
+            duration: p.duration,
+            delay: p.delay,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         />
       ))}
     </div>
@@ -81,11 +95,15 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 blur-3xl"
-          style={{ background: "radial-gradient(circle, #6C63FF, transparent)" }}
+          style={{
+            background: "radial-gradient(circle, #6C63FF, transparent)",
+          }}
         />
         <div
           className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full opacity-10 blur-3xl"
-          style={{ background: "radial-gradient(circle, #00C2FF, transparent)" }}
+          style={{
+            background: "radial-gradient(circle, #00C2FF, transparent)",
+          }}
         />
       </div>
 
@@ -119,16 +137,23 @@ export default function Hero() {
           </p>
 
           <p className="text-slate-400 max-w-xl mt-4 mb-8 leading-relaxed">
-            Building high-performance cross-platform mobile applications with React
-            Native and Native iOS. 3+ years shipping production apps to the App
-            Store and Google Play.
+            Building high-performance cross-platform mobile applications with
+            React Native and Native iOS. 3+ years shipping production apps to
+            the App Store and Google Play.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
             <a
-              href="https://docs.google.com/document/d/16SOWMrYMbiFURyY6wQz0yZQTug7Fw7EO/edit?usp=sharing&ouid=101107939379367010212&rtpof=true&sd=true"
+              href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
+              className="btn-outline flex items-center gap-2"
+            >
+              <FiEye /> View Resume
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Raman_Thakur_Resume.pdf"
               className="btn-primary flex items-center gap-2"
             >
               <FiDownload /> Download Resume
@@ -141,9 +166,21 @@ export default function Hero() {
           {/* Social links */}
           <div className="flex gap-5 justify-center lg:justify-start">
             {[
-              { icon: <FiGithub />, href: "https://github.com/ramanthakur625", label: "GitHub" },
-              { icon: <FiLinkedin />, href: "https://www.linkedin.com/in/raman-thakur-9b0a1a291", label: "LinkedIn" },
-              { icon: <FiMail />, href: "mailto:raman49625@gmail.com", label: "Email" },
+              {
+                icon: <FiGithub />,
+                href: "https://github.com/ramanthakur625",
+                label: "GitHub",
+              },
+              {
+                icon: <FiLinkedin />,
+                href: "https://www.linkedin.com/in/raman-thakur-9b0a1a291",
+                label: "LinkedIn",
+              },
+              {
+                icon: <FiMail />,
+                href: "mailto:raman49625@gmail.com",
+                label: "Email",
+              },
             ].map((s) => (
               <motion.a
                 key={s.label}
