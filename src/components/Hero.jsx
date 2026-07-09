@@ -144,7 +144,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
             <a
-              href="/portfolio/Raman_Thakur_Resume.pdf"
+              href="/ramanthakur.github.io/Raman_Thakur_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn-outline flex items-center gap-2"
@@ -152,7 +152,7 @@ export default function Hero() {
               <FiEye /> View Resume
             </a>
             <a
-              href="/portfolio/Raman_Thakur_Resume.pdf"
+              href="/ramanthakur.github.io/Raman_Thakur_Resume.pdf"
               download="Raman_Thakur_Resume.pdf"
               className="btn-primary flex items-center gap-2"
             >
@@ -216,13 +216,16 @@ export default function Hero() {
             />
             {/* Avatar circle */}
             <div
-              className="relative w-56 h-56 md:w-72 md:h-72 rounded-full flex items-center justify-center text-8xl font-black"
+              className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden"
               style={{
-                background: "linear-gradient(135deg, #6C63FF22, #00C2FF22)",
                 border: "2px solid rgba(108,99,255,0.3)",
               }}
             >
-              RT
+              <img
+                src="/ramanthakur.github.io/profileImg.jpeg"
+                alt="Raman Thakur"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating badges */}

@@ -8,21 +8,87 @@ export const navLinks = [
 ];
 
 export const skills = [
-  { category: "Mobile", icon: "📱", items: ["React Native", "JavaScript", "TypeScript", "Swift", "SwiftUI", "UIKit"] },
-  { category: "Native iOS", icon: "🍎", items: ["Xcode 15", "CocoaPods", "CoreMotion", "Vision Framework", "AVFoundation", "CoreData"] },
-  { category: "Backend & Cloud", icon: "☁️", items: ["Firebase Firestore", "Firebase Auth", "Cloud Functions", "REST APIs", "WebSockets", "Node.js"] },
-  { category: "State Management", icon: "🔄", items: ["Redux Toolkit", "Zustand", "Context API", "MVVM", "Clean Architecture"] },
-  { category: "DevOps & Tools", icon: "🛠️", items: ["Git", "GitHub Actions", "Fastlane", "TestFlight", "Sentry", "Firebase Crashlytics"] },
-  { category: "Integrations", icon: "🔌", items: ["StoreKit 2", "Google Play Billing", "FCM", "APNs", "OneSignal", "BLE"] },
+  {
+    category: "Mobile",
+    icon: "📱",
+    items: [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Swift",
+      "SwiftUI",
+      "UIKit",
+    ],
+  },
+  {
+    category: "Native iOS",
+    icon: "🍎",
+    items: [
+      "Xcode 15",
+      "CocoaPods",
+      "CoreMotion",
+      "Vision Framework",
+      "AVFoundation",
+      "CoreData",
+    ],
+  },
+  {
+    category: "Backend & Cloud",
+    icon: "☁️",
+    items: [
+      "Firebase Firestore",
+      "Firebase Auth",
+      "Cloud Functions",
+      "REST APIs",
+      "WebSockets",
+      "Node.js",
+    ],
+  },
+  {
+    category: "State Management",
+    icon: "🔄",
+    items: [
+      "Redux Toolkit",
+      "Zustand",
+      "Context API",
+      "MVVM",
+      "Clean Architecture",
+    ],
+  },
+  {
+    category: "DevOps & Tools",
+    icon: "🛠️",
+    items: [
+      "Git",
+      "GitHub Actions",
+      "Fastlane",
+      "TestFlight",
+      "Sentry",
+      "Firebase Crashlytics",
+    ],
+  },
+  {
+    category: "Integrations",
+    icon: "🔌",
+    items: [
+      "StoreKit 2",
+      "Google Play Billing",
+      "FCM",
+      "APNs",
+      "OneSignal",
+      "BLE",
+    ],
+  },
 ];
 
 export const experiences = [
   {
-    role: "Senior Mobile App Developer",
+    role: "Mobile App Developer",
     company: "The Brihaspati Infotech",
     period: "Jan 2023 – May 2026",
     type: "Full-Time",
-    description: "Led end-to-end development of 3 production B2C mobile apps deployed on App Store and Google Play.",
+    description:
+      "Led end-to-end development of 3 production B2C mobile apps deployed on App Store and Google Play.",
     points: [
       "Shipped 3 B2C mobile apps with 100% first-submission approval rate on both stores",
       "Built 60fps UIs using Reanimated 2 and Gesture Handler across 15+ device configurations",
@@ -39,7 +105,8 @@ export const experiences = [
     company: "Zeroit Solutions",
     period: "Jul 2022 – Jan 2023",
     type: "Internship",
-    description: "6-month iOS Swift internship building native components and managing Apple Developer accounts.",
+    description:
+      "6-month iOS Swift internship building native components and managing Apple Developer accounts.",
     points: [
       "Built native iOS components using Swift 5 and UIKit with Auto Layout",
       "Implemented CoreData persistence layer for offline-first functionality across 3 modules",
@@ -52,29 +119,71 @@ export const experiences = [
 export const projects = [
   {
     title: "Single Apostolics Meet",
-    description: "Full-featured dating app with real-time matching, Tinder-style swipe cards, Firebase chat, and premium subscriptions. Serving 1000+ daily active users.",
-    stack: ["React Native", "Firebase Firestore", "StoreKit 2", "Cloud Functions", "FCM"],
-    features: ["Tinder-style swipe matching", "Real-time chat with media", "3-tier subscription model", "Push notifications", "Deep linking"],
-    appStore: "https://apps.apple.com/us/app/single-apostolics-meet/id6526484879",
-    playStore: "https://play.google.com/store/apps/details?id=com.singleapostolicsmeet",
+    description:
+      "Full-featured dating app with real-time matching, Tinder-style swipe cards, Firebase chat, and premium subscriptions. Serving 1000+ daily active users.",
+    stack: [
+      "React Native",
+      "Firebase Firestore",
+      "StoreKit 2",
+      "Cloud Functions",
+      "FCM",
+    ],
+    features: [
+      "Tinder-style swipe matching",
+      "Real-time chat with media",
+      "3-tier subscription model",
+      "Push notifications",
+      "Deep linking",
+    ],
+    appStore:
+      "https://apps.apple.com/us/app/single-apostolics-meet/id6526484879",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.singleapostolicsmeet",
     color: "#FF6B9D",
     status: "Live",
   },
   {
     title: "Movers and Shakers Dance",
-    description: "Dance academy platform for instructors to publish classes, share videos, and communicate with students via Firebase real-time messaging.",
-    stack: ["React Native", "AVFoundation", "Firebase Storage", "Native Bridges", "OneSignal"],
-    features: ["Video trimming module", "Media sharing chat", "Class reminders", "CDN video delivery", "Deep linking"],
-    appStore: "https://apps.apple.com/us/app/movers-and-shakers-dance/id6745867163",
-    playStore: "https://play.google.com/store/apps/details?id=com.moversandshakers.classes",
+    description:
+      "Dance academy platform for instructors to publish classes, share videos, and communicate with students via Firebase real-time messaging.",
+    stack: [
+      "React Native",
+      "AVFoundation",
+      "Firebase Storage",
+      "Native Bridges",
+      "OneSignal",
+    ],
+    features: [
+      "Video trimming module",
+      "Media sharing chat",
+      "Class reminders",
+      "CDN video delivery",
+      "Deep linking",
+    ],
+    appStore:
+      "https://apps.apple.com/us/app/movers-and-shakers-dance/id6745867163",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.moversandshakers.classes",
     color: "#6C63FF",
     status: "Live",
   },
   {
     title: "LilBeats — Kids Music App",
-    description: "Children's music platform with background audio, lock screen controls, gapless playback for 500+ tracks, and Firebase Analytics parental dashboard.",
-    stack: ["React Native", "Track Player", "AVFoundation", "Firebase Analytics"],
-    features: ["Background audio", "Lock screen controls", "Gapless playback", "Parental controls", "Usage analytics"],
+    description:
+      "Children's music platform with background audio, lock screen controls, gapless playback for 500+ tracks, and Firebase Analytics parental dashboard.",
+    stack: [
+      "React Native",
+      "Track Player",
+      "AVFoundation",
+      "Firebase Analytics",
+    ],
+    features: [
+      "Background audio",
+      "Lock screen controls",
+      "Gapless playback",
+      "Parental controls",
+      "Usage analytics",
+    ],
     appStore: "https://apps.apple.com/us/app/lil-beatz/id6471659112",
     playStore: "https://play.google.com/store/apps/details?id=com.lilbookz",
     color: "#00C2FF",
@@ -82,9 +191,22 @@ export const projects = [
   },
   {
     title: "Lacrosse Reaction Trainer",
-    description: "Native Swift iOS sports-performance app measuring athlete reaction times with CoreMotion and Vision framework face detection.",
-    stack: ["Swift", "CoreMotion", "Vision Framework", "StoreKit 2", "Core Animation"],
-    features: ["Millisecond reaction timing", "Face detection triggers", "Premium drill packs", "Analytics dashboard", "Fluid animations"],
+    description:
+      "Native Swift iOS sports-performance app measuring athlete reaction times with CoreMotion and Vision framework face detection.",
+    stack: [
+      "Swift",
+      "CoreMotion",
+      "Vision Framework",
+      "StoreKit 2",
+      "Core Animation",
+    ],
+    features: [
+      "Millisecond reaction timing",
+      "Face detection triggers",
+      "Premium drill packs",
+      "Analytics dashboard",
+      "Fluid animations",
+    ],
     appStore: null,
     playStore: null,
     color: "#FF9F43",
@@ -93,23 +215,71 @@ export const projects = [
 ];
 
 export const achievements = [
-  { icon: "🚀", title: "3 Apps Live", desc: "Published on App Store & Google Play" },
+  {
+    icon: "🚀",
+    title: "3 Apps Live",
+    desc: "Published on App Store & Google Play",
+  },
   { icon: "⚡", title: "3+ Years", desc: "Production mobile development" },
-  { icon: "📉", title: "35% Crash Reduction", desc: "Via Sentry & Crashlytics" },
-  { icon: "⏱️", title: "60% Faster Deploys", desc: "CI/CD with Fastlane & GitHub Actions" },
+  {
+    icon: "📉",
+    title: "35% Crash Reduction",
+    desc: "Via Sentry & Crashlytics",
+  },
+  {
+    icon: "⏱️",
+    title: "60% Faster Deploys",
+    desc: "CI/CD with Fastlane & GitHub Actions",
+  },
   { icon: "💳", title: "IAP Expert", desc: "StoreKit 2 & Google Play Billing" },
-  { icon: "🎯", title: "100% Approval Rate", desc: "First-submission App Store approvals" },
+  {
+    icon: "🎯",
+    title: "100% Approval Rate",
+    desc: "First-submission App Store approvals",
+  },
 ];
 
 export const services = [
-  { icon: "📱", title: "React Native Development", desc: "Cross-platform iOS & Android apps with native performance and 60fps animations." },
-  { icon: "🍎", title: "iOS Swift Development", desc: "Native Swift apps using UIKit, SwiftUI, CoreMotion, Vision Framework and more." },
-  { icon: "🔥", title: "Firebase Integration", desc: "Firestore, Auth, Storage, Cloud Functions, Analytics and Crashlytics setup." },
-  { icon: "🔌", title: "API Integration", desc: "REST APIs, OAuth 2.0, JWT, WebSockets with interceptors and error handling." },
-  { icon: "🚀", title: "App Store Publishing", desc: "Full App Store Connect and Google Play Console submission and management." },
-  { icon: "🐛", title: "Bug Fixing & Optimization", desc: "Crash triage, memory leak debugging, and performance profiling." },
-  { icon: "💳", title: "In-App Purchases", desc: "StoreKit 2, Google Play Billing, subscriptions with server-side validation." },
-  { icon: "💬", title: "Consulting", desc: "Architecture review, tech stack advice, code audit and team mentoring." },
+  {
+    icon: "📱",
+    title: "React Native Development",
+    desc: "Cross-platform iOS & Android apps with native performance and 60fps animations.",
+  },
+  {
+    icon: "🍎",
+    title: "iOS Swift Development",
+    desc: "Native Swift apps using UIKit, SwiftUI, CoreMotion, Vision Framework and more.",
+  },
+  {
+    icon: "🔥",
+    title: "Firebase Integration",
+    desc: "Firestore, Auth, Storage, Cloud Functions, Analytics and Crashlytics setup.",
+  },
+  {
+    icon: "🔌",
+    title: "API Integration",
+    desc: "REST APIs, OAuth 2.0, JWT, WebSockets with interceptors and error handling.",
+  },
+  {
+    icon: "🚀",
+    title: "App Store Publishing",
+    desc: "Full App Store Connect and Google Play Console submission and management.",
+  },
+  {
+    icon: "🐛",
+    title: "Bug Fixing & Optimization",
+    desc: "Crash triage, memory leak debugging, and performance profiling.",
+  },
+  {
+    icon: "💳",
+    title: "In-App Purchases",
+    desc: "StoreKit 2, Google Play Billing, subscriptions with server-side validation.",
+  },
+  {
+    icon: "💬",
+    title: "Consulting",
+    desc: "Architecture review, tech stack advice, code audit and team mentoring.",
+  },
 ];
 
 export const testimonials = [

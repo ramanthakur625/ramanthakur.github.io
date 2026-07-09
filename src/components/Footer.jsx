@@ -11,7 +11,7 @@ export default function Footer() {
         </div>
 
         <p className="text-slate-500 text-sm text-center">
-          © {new Date().getFullYear()} Raman Thakur. Built with React + Vite + Tailwind.
+          © {new Date().getFullYear()} Raman Thakur. Built with React + Vite + Tailwind + ❤️.
         </p>
 
         <div className="flex items-center gap-4">
